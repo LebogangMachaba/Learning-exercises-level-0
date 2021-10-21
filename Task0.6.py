@@ -1,18 +1,15 @@
-
-
-
-def maximum():
-    num_1 = int(input("Please Enter 1st Number:"))
-    num_2 = int(input("Please Enter 2nd Number:"))
-    num_3 = int(input("Please Enter 3rd Number:"))
+def maximum(num_1, num_2, num_3 ):
+    x = num_1
+    y = num_2 
+    z = num_3
     
-    if num_2 <= num_1 >= num_3:
-        print("The Maximum number is", num_1)
-    elif num_1 <= num_2 >= num_3:
-          print("The Maximum number is", num_2)
-    elif num_2 <= num_3 >= num_1:
-          print("The Maximum number is", num_3)
+    if y <= x >= z:
+        print("The Maximum number is", x)
+    elif x <= y >= z:
+          print("The Maximum number is", y)
+    elif y <= z >= x:
+          print("The Maximum number is", z)
 
 
 
-maximum()
+maximum(15, 10, 23)

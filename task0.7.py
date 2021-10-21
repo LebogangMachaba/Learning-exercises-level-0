@@ -1,22 +1,18 @@
-#collects input from user
-celsius         = int(input("Please enter temperature in Celcius"))
-fahrenheit_2    = int(input("Please enter temperature in Fahrenheit"))
-
-
 #converts celsius to fahrenheit
 def convert_to_fahrenheit(c):
+    celsius = float(c)
+    fahrenheit = float((9/5 * celsius) + 32)
     
-    return (9/5 * celsius) + 32
-    print(c)
-fahrenheit = convert_to_fahrenheit(celsius)
-print("Your Celsius temperature in Fahrenheit is:", fahrenheit)
+    print("Your Celsius temperature in Fahrenheit is:", round(fahrenheit),"C")
 
+convert_to_fahrenheit(33)
 
 #converts fahrenheit to celsius
 def convert_to_celsius(f):
+    fahrenheit = float(f)
+    celsius = float(5/9 *(fahrenheit - 32))
+        
+    print("Your Fahrenheit temperature in Celsius is:", round(celsius), 'F')  
 
-        return 5/9 *(fahrenheit_2 - 32)
-        print(f)
-celsius = convert_to_celsius(fahrenheit_2)  
-print("Your Fahrenheit temperature in Celsius is", celsius)  
+convert_to_celsius(90)
 
