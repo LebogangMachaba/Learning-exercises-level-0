@@ -1,17 +1,13 @@
 def extract_vowels(string):
     
-    #declaring vowels
-    Lcase_vowel = ['a', 'e', 'o', 'i', 'u'] 
-    Ucase_vowel = ['A', 'E', 'I', 'O', 'U']
-    
-    vowels = []
+    vowel_lst = ('aeoiuAEIOU')
+    vowels = ''
+    join_vowels = ", " 
+
     for v in string:
-            if v in Lcase_vowel or v in Ucase_vowel == True:
-                
-                vowels.append(v)
-    print('Vowels: ',(vowels), end= '' )
-
-extract_vowels('Umuzi')
-
-
-
+        if v not in vowels and v in vowel_lst :
+             
+            vowels = vowels.lower() + v   
+                    
+    print('Vowels: ',join_vowels.join(vowels))
+extract_vowels('Umuzi'.lower())

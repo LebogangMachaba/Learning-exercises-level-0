@@ -1,18 +1,17 @@
-#converts celsius to fahrenheit
-def convert_to_fahrenheit(c):
+def celsius_to_fahrenheit(c):
     celsius = float(c)
     fahrenheit = float((9/5 * celsius) + 32)
     
-    print("Your Celsius temperature in Fahrenheit is:", round(fahrenheit),"C")
+    return fahrenheit
 
-convert_to_fahrenheit(33)
+celsius_to_fahrenheit(33)
 
-#converts fahrenheit to celsius
-def convert_to_celsius(f):
+
+def fahrenheit_to_celsius(f):
     fahrenheit = float(f)
     celsius = float(5/9 *(fahrenheit - 32))
         
-    print("Your Fahrenheit temperature in Celsius is:", round(celsius), 'F')  
+    return celsius 
 
-convert_to_celsius(90)
+fahrenheit_to_celsius(90)
 

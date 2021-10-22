@@ -4,11 +4,11 @@ def maximum(num_1, num_2, num_3 ):
     z = num_3
     
     if y <= x >= z:
-        print("The Maximum number is", x)
+        return x
     elif x <= y >= z:
-          print("The Maximum number is", y)
+          return y
     elif y <= z >= x:
-          print("The Maximum number is", z)
+          return z
 
 
 
